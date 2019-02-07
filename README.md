@@ -1,5 +1,5 @@
 # springcloud_swagger
-微服务场景下swagger演示：zuul+swagger
+微服务场景下swagger演示：zuul+swagger,本项目只对springcloud-2.0-api-pay-service-impl支付项目做了swagger路由,订单和会员没有做路由
 
 利用网关zuul统一管理各个微服务的swagger接口文档信息
 
