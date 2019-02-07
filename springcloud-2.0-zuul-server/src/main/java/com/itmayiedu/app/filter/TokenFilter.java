@@ -1,4 +1,4 @@
-package com.itmayiedu.app.Filter;
+package com.itmayiedu.app.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -7,7 +7,6 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.IOException;
 
 /**
  * @version 1.0
@@ -15,7 +14,7 @@ import java.io.IOException;
  * @author: ChenRuiQing.
  * Create Time:  2019-01-28 下午 2:22
  */
-@Component
+//@Component
 public class TokenFilter extends ZuulFilter{
     @Override
     public String filterType() {
@@ -36,7 +35,7 @@ public class TokenFilter extends ZuulFilter{
     public Object run() throws ZuulException {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
-        String accessToken = request.getParameter("accessToken");
+            String accessToken = request.getParameter("accessToken");
 //        if (request.getRequestURI().contains("myOrder")) {
         if (StringUtils.isEmpty(accessToken)) {
             //如果登录Token为空的话，返回一个异常

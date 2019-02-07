@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springcloud-2.0-zuul-test:war">
+    <output-path>$PROJECT_DIR$/springcloud-2.0-zuul-test/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springcloud-2.0-zuul-test</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springcloud-2.0-zuul-test.war">
+      <element id="artifact" artifact-name="springcloud-2.0-zuul-test:war exploded" />
+    </root>
+  </artifact>
+</component>
